@@ -43,7 +43,7 @@ body{
 }
 
 .card_header { 
-    background-image: url(../one/assets/images/bg-pattern-card.svg);
+    background-image: url(./assets/images/bg-pattern-card.svg);
     height: 120px;
     position: relative;
 }
