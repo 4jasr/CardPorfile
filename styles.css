@@ -1,5 +1,5 @@
 html{
-background-color: rgb(17, 103, 117);
+background-color: hsl(185, 75%, 39%);
 }
 html::after,
 html::before {
@@ -13,36 +13,36 @@ html::before {
 }
 
 html::before {
-    border-radius: 50%;
     background-image: url('./assets/images/bg-pattern-top.svg');
-    top: -25%;
-    left: -25%;
+    top: -55%;
+    left: -5%;
 }
 
 html::after{
-    
     background-image: url('./assets/images/bg-pattern-bottom.svg');
-    bottom: -25%;
-    right: -25%;
+    bottom: -55%;
+    right: -5%;
 }
 
 body{
     min-height: 100vh;
-   display: grid;
-   place-items: center;
-   margin: 0;
-   font-family: sans-serif;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    font-family: sans-serif;
 }
 
+
+
 .card {
-    width: 350px;
+    width: 340px;
     height: 325px;
     background-color: whitesmoke;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.card_header { 
+.card_header {
     background-image: url(./assets/images/bg-pattern-card.svg);
     height: 120px;
     position: relative;
@@ -93,4 +93,30 @@ text-align: center;
     display: flex;
     flex-direction: column;
     font-weight: bold;
+}
+
+.footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+    color: hsl(229, 23%, 23%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    }
 }
